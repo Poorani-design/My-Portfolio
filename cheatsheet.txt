@@ -1,0 +1,26 @@
+TAILWIND CSS SHORTCUT :
+    text-xs   // very small
+    text-sm
+    text-base
+    text-lg
+    text-xl
+    text-2xl
+    text-3xl
+    text-4xl
+
+
+Class	Meaning
+leading-none	very tight
+leading-tight	small spacing
+leading-normal	default
+leading-relaxed	comfortable spacing 👍
+leading-loose	very wide
+
+
+drop-shadow
+backdrop-blur-md
+hover:scale-105 
+
+
+https://react-icons.github.io/react-icons/
+
