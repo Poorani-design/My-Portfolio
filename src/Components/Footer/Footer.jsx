@@ -114,7 +114,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <section className="dark:bg-white dark:text-black bg-gray-900 text-white text-sm py-4 text-center flex flex-row gap-2 px-30 justify-between">
+      <section className="dark:bg-white dark:text-black bg-gray-900 text-white text-sm py-4 text-center flex flex-col gap-4 sm:flex-row gap-2 px-30 justify-between">
         <div className="">
           Developed by{" "}
           <span className="text-yellow-500 font-bold ">
@@ -126,5 +126,5 @@ const Footer = () => {
     </footer>
   );
 };
-
+ 
 export default Footer;
