@@ -136,7 +136,7 @@ const Projects = () => {
             return (
               <div
                 key={pro.id}
-                className="bg-gray-900 min-w-10/12 flex-col md:min-w-6/12 sm:min-w-12/12 lg:min-w-4/12 min-h-80 text-white flex rounded-lg p-4 justify-start items-start h-30"
+                className="bg-gray min-w-10/12 flex-col md:min-w-6/12 sm:min-w-12/12 lg:min-w-4/12 min-h-80 flex rounded-lg p-4 justify-start items-start h-30  light:shadow-md shadow-amber-400 "
               >
                 <div className="text-xl font-semibold md:heading-3 rounded-sm w-full text-yellow top-30 h-20">
                   {/* {pro.id}  */}
@@ -150,23 +150,22 @@ const Projects = () => {
                 <div className="h-15 text-main font-bold text-teal mb-2 py-2">
                   {pro.skillUsed}
                 </div>
-                <div className="h-50 py-4 small-text line-clamp-2 group-hover:line-clamp-none">
+                <div className="h-50 py-4 text-gray-500 line-clamp-2 group-hover:line-clamp-none">
                   {pro.techniques}
                 </div>
-                <div className="flex flex-row  w-full py-2 content-end items-end justify-between">
+                <div className="flex flex-col w-full py-2 content-center items-center justify-center sm:flex-row sm:justify-between">
                   {pro.sourceCodeURL !== "none" && (
                     <a
                       href=""
-                      className="px-4 py-2 items-center flex bg-transparent border border-gray-500 cursor:pointer rounded-lg hover:shadow-md hover:shadow-amber-400"
+                      className="px-4 my-2 w-full py-2 items-center flex justify-center bg-transparent border  border-gray-500 cursor:pointer rounded-lg hover:shadow-md hover:shadow-amber-400"
                     >
                       View Code
                     </a>
                   )}
                   {pro.liveURL !== "none" && (
-                    <a href={pro.liveURL} target="_blank">
-                      <div className="px-4 py-2 items-center flex bg-pink-600 border border-pink-800 cursor:pointer rounded-lg hover:shadow-lg cursor-pointer">
+                    <a href={pro.liveURL} target="_blank"  className="px-4 my-2 w-full py-2 items-center flex justify-center text-main bg-pink-600 border border-pink-800 cursor:pointer rounded-lg hover:shadow-lg cursor-pointer">
                         Go Live
-                      </div>
+                    
                     </a>
                   )}
                 </div>
@@ -176,13 +175,13 @@ const Projects = () => {
         </div>
         <button
           onClick={() => scroll("left")}
-          className="card-arrow text-teal -left-5 sm:-left-8 md:-left-10 lg:-left-15"
+          className="card-arrow bg-gray text-teal -left-5 sm:-left-8 md:-left-10 lg:-left-15"
         >
           <FaArrowLeft />
         </button>
         <button
           onClick={() => scroll("right")}
-          className="card-arrow text-teal  -right-5 sm:-right-8 md:-right-10 lg:-right-15"
+          className="card-arrow bg-gray text-teal  -right-5 sm:-right-8 md:-right-10 lg:-right-15"
         >
           <FaArrowRight />
         </button>

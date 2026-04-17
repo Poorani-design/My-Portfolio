@@ -46,7 +46,7 @@ const Skills = () => {
         <div className="heading-1 text-center text-pink my-2 py-4 h-full w-full">
           My Skills
         </div>
-        <div className="grid grid-cols-2 mx-5 content-center items-center sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 mx-5 content-center items-center xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
           {skills.map((e) => {
             return (
               <div key={e.id}>

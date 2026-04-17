@@ -68,18 +68,18 @@ const Footer = () => {
     // { id: 11, name: "Video", url: "", icon: video },
   ];
   return (
-    <footer>
+    <footer id="contact px-2">
       <div>
-        <h1 className="heading-1   uppercase font-bold text-center my-3 mb-8 gap-2 leading-relaxed py-4">
+        <h1 className="heading-1  px-2  uppercase font-bold text-center my-3 mb-8 gap-2 leading-relaxed py-4">
           Ready to create Something <span className="text-teal">Amazing ?</span>
         </h1>
-        <div className="flex  flex-col sm:flex-row justify-center gap-10  mx-20 md:mx-auto my-4 ">
-          <a href={resume} download>
-            <div className="flex border  border-gray-700  rounded-full backdrop-blur-md bg-teal-800 px-10 py-2 justify-center items-center gap-2 font-semibold  btn-transparent">
+        <div className="flex  flex-col sm:flex-row justify-center gap-10  mx-auto items-center md:mx-auto my-4 w-auto min-w-80">
+          <a href={resume} download className="w-full px-3 md:w-auto">
+            <div className="flex border w-full border-gray-700  rounded-full backdrop-blur-md bg-gray  px-10 py-2 justify-center items-center gap-2 font-semibold  btn-transparent ">
               Download My resume <IoCloudDownload className="text-3xl" />
             </div>
           </a>
-          <a href="tel:+91 8526021884">
+          <a href="tel:+91 8526021884" className="w-full px-3 md:w-auto">
             <div className="btn btn-secondary flex justify-center items-center">
               Get In Touch <MdOutlineTouchApp className="text-3xl" />
             </div>
@@ -114,17 +114,15 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <section className="dark:bg-white dark:text-black bg-gray-900 text-white text-sm py-4 text-center flex flex-col gap-4 sm:flex-row gap-2 px-30 justify-between">
+      <section className=" text-sm py-4 text-center flex flex-col sm:flex-row gap-1 px-30 justify-between">
         <div className="">
-          Developed by{" "}
-          <span className="text-yellow-500 font-bold ">
-            Poorani Gunasekaran
-          </span>
+          Developed by
+          <span className="text-yellow font-bold "> &nbsp;Poorani Gunasekaran</span>
         </div>
         <div>Copyright &copy; 2026 All rights reserved.</div>
       </section>
     </footer>
   );
 };
- 
+
 export default Footer;
