@@ -169,7 +169,7 @@ const Projects = () => {
                 <div className="flex flex-col w-full  py-2 gap-4  content-center items-center justify-center sm:flex-row sm:justify-between">
                   {pro.sourceCodeURL !== "none" && (
                     <a
-                      href=""
+                      href={pro.sourceCodeURL}
                       className="px-4 my-2 w-full py-2 items-center flex justify-center bg-transparent border  border-gray-500 cursor:pointer rounded-lg hover:shadow-md hover:shadow-amber-400"
                     >
                       View Code
