@@ -23,7 +23,7 @@ const Projects = () => {
         "An AI-powered system monitoring platform that tracks CPU usage, memory consumption, and network traffic in real-time, and predicts potential system failures using intelligent data analysis.",
       imgURL: "",
       altContent: "",
-      liveURL:"none",
+      liveURL: "none",
       sourceCodeURL:
         "https://github.com/Poorani-design/AI-Based-System-Monitoring-Failure-Prediction-Platform",
     },
