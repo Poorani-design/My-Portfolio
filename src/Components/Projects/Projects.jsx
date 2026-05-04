@@ -15,6 +15,19 @@ const Projects = () => {
 
   const project = [
     {
+      id: 0,
+      name: "AI Based System Monitoring Failure Prediction Platform",
+      skillUsed:
+        "React, Axios, Node JS, Express, Mongo DB, Tailwind CSS, HTML, CSS",
+      techniques:
+        "An AI-powered system monitoring platform that tracks CPU usage, memory consumption, and network traffic in real-time, and predicts potential system failures using intelligent data analysis.",
+      imgURL: "",
+      altContent: "",
+      liveURL:"none",
+      sourceCodeURL:
+        "https://github.com/Poorani-design/AI-Based-System-Monitoring-Failure-Prediction-Platform",
+    },
+    {
       id: 1,
       name: "Yuva Interior Design",
       skillUsed: "React, Tailwind CSS, HTML, CSS",
@@ -136,7 +149,7 @@ const Projects = () => {
             return (
               <div
                 key={pro.id}
-                className="bg-gray min-w-10/12 flex-col md:min-w-6/12 sm:min-w-12/12 lg:min-w-4/12 min-h-80 flex rounded-lg p-4 justify-start items-start h-30  light:shadow-md shadow-amber-400 "
+                className="bg-gray min-w-10/12 flex-col md:min-w-6/12 sm:min-w-12/12 lg:min-w-4/12 min-h-80 flex rounded-lg p-4 justify-start items-start h-60  light:shadow-md shadow-amber-400 "
               >
                 <div className="text-xl font-semibold md:heading-3 rounded-sm w-full text-yellow top-30 h-20">
                   {/* {pro.id}  */}
@@ -153,7 +166,7 @@ const Projects = () => {
                 <div className="h-50 py-4 text-gray-500 line-clamp-2 group-hover:line-clamp-none">
                   {pro.techniques}
                 </div>
-                <div className="flex flex-col w-full py-2 content-center items-center justify-center sm:flex-row sm:justify-between">
+                <div className="flex flex-col w-full  py-2 gap-4  content-center items-center justify-center sm:flex-row sm:justify-between">
                   {pro.sourceCodeURL !== "none" && (
                     <a
                       href=""
@@ -163,9 +176,12 @@ const Projects = () => {
                     </a>
                   )}
                   {pro.liveURL !== "none" && (
-                    <a href={pro.liveURL} target="_blank"  className="px-4 my-2 w-full py-2 items-center flex justify-center text-main bg-pink-600 border border-pink-800 cursor:pointer rounded-lg hover:shadow-lg cursor-pointer">
-                        Go Live
-                    
+                    <a
+                      href={pro.liveURL}
+                      target="_blank"
+                      className="px-4 my-2 w-full py-2 items-center flex justify-center text-main bg-pink-600 border border-pink-800 cursor:pointer rounded-lg hover:shadow-lg cursor-pointer"
+                    >
+                      Go Live
                     </a>
                   )}
                 </div>

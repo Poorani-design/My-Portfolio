@@ -114,7 +114,7 @@ const Footer = () => {
           })}
         </div>
       </div>
-      <section className=" text-sm py-4 text-center flex flex-col sm:flex-row gap-1 px-30 justify-between">
+      <section className=" text-sm py-4 text-center flex flex-col sm:flex-row gap-1 px-10 sm:px-20 md:px-30 lg:px-40 justify-between">
         <div className="">
           Developed by
           <span className="text-yellow font-bold "> &nbsp;Poorani Gunasekaran</span>
